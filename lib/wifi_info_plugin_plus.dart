@@ -42,7 +42,6 @@ class WifiInfoWrapper {
   WifiInfoWrapper();
 
   WifiInfoWrapper.withMap(Map<dynamic, dynamic> nativeInfo) {
-    if (nativeInfo != null) {
       this._bssid = nativeInfo["BSSID"];
       this._ssid = nativeInfo["SSID"];
       this._ip = nativeInfo["IP"];
@@ -56,7 +55,6 @@ class WifiInfoWrapper {
       this._routerIp = nativeInfo["ROUTERIP"];
       this._dns1Ip = nativeInfo["DNS1"];
       this._dns2Ip = nativeInfo["DNS2"];
-    }
   }
 
   /// IPV4 address for connected device
